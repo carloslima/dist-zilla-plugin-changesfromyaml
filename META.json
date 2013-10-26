@@ -54,7 +54,15 @@
          }
       }
    },
-   "release_status" : "stable",
+   "release_status" : "testing",
+   "resources" : {
+      "homepage" : "https://github.com/carloslima/dist-zilla-plugin-changesfromyaml",
+      "repository" : {
+         "type" : "git",
+         "url" : "https://github.com/carloslima/dist-zilla-plugin-changesfromyaml.git",
+         "web" : "https://github.com/carloslima/dist-zilla-plugin-changesfromyaml"
+      }
+   },
    "version" : "0.001"
 }
 
