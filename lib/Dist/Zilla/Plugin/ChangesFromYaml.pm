@@ -22,3 +22,32 @@ sub munge_file {
 
 __PACKAGE__->meta->make_immutable;
 1;
+
+__END__
+
+=head1 SYNOPSIS
+
+dist.ini:
+
+        [ChangesFromYaml]
+
+=head1 DESCRIPTION
+
+This module lets you keep your Changes file in YAML format:
+
+    version: 0.37
+    date:    Fri Oct 25 21:46:59 MYT 2013
+    changes:
+    - 'Bugfix: Run Test::Compile tests as xt as they require optional dependencies to be present (GH issue #22)'
+    - 'Testing: Added Travis-CI integration'
+    - 'Makefile: Added target to update version on all packages'
+
+and during build converts it to CPAN::Changes::Spec format
+
+    0.37 Fri Oct 25 21:46:59 MYT 2013
+     - Bugfix: Run Test::Compile tests as xt as they require optional
+       dependencies to be present (GH issue #22)
+     - Testing: Added Travis-CI integration
+     - Makefile: Added target to update version on all packages
+
+=cut
