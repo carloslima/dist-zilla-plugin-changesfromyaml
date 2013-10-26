@@ -27,7 +27,7 @@ __END__
 
 =head1 SYNOPSIS
 
-dist.ini:
+In your 'dist.ini':
 
     [ChangesFromYaml]
 
