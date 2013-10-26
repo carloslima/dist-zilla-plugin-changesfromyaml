@@ -1,15 +1,15 @@
 #!/usr/bin/perl
 use strict;
 use warnings;
-use Test::More (tests => 1);
+use Test::More ( tests => 1 );
 use Test::DZil;
 
-my $tzil = Builder->from_config({ dist_root => 'corpus/DZT' });
+my $tzil = Builder->from_config( { dist_root => 'corpus/DZT' } );
 $tzil->build;
 
 my $contents = $tzil->slurp_file('build/Changes');
 
-is($contents, <<'CHANGES',   "Changes got converted correctly");
+is( $contents, <<'CHANGES', "Changes got converted correctly" );
 0.37 Fri Oct 25 21:46:59 MYT 2013
  - Bugfix: Run Test::Compile tests as xt as they require optional
    dependencies to be present (GH issue #22)
