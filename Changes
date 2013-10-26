@@ -1,4 +1,9 @@
-# {{$NEXT}}
+{{$NEXT}}
+
+---
+version: 0.002
+date:    2013-10-27 02:37:54 +0800
+changes:
 - Added support to convert the dates as well
 - Added Travis-CI integration
 -
