@@ -1,7 +1,7 @@
 SYNOPSIS
     dist.ini:
 
-            [ChangesFromYaml]
+        [ChangesFromYaml]
 
 DESCRIPTION
     This module lets you keep your Changes file in YAML format:

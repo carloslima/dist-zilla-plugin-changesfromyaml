@@ -29,7 +29,7 @@ __END__
 
 dist.ini:
 
-        [ChangesFromYaml]
+    [ChangesFromYaml]
 
 =head1 DESCRIPTION
 
