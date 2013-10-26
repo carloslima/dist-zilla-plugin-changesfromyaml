@@ -5,7 +5,8 @@ perl:
   - 5.14
   - 5.12
   - 5.10
-script:
+install:
    - dzil authordeps --missing | cpanm -nq || { cat ~/.cpanm/build.log ; false ; }
    - dzil listdeps --author --missing | grep -v Baz | cpanm -nq || { cat ~/.cpanm/build.log ; false ; }
+script:
    - dzil test --automated --author --release
