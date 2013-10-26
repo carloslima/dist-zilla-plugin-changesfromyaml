@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST
+META.json
+META.yml
+Makefile.PL
+README
+corpus/DZT/Changes
+corpus/DZT/dist.ini
+corpus/DZT/lib/DZT.pm
+lib/Dist/Zilla/Plugin/ChangesFromYaml.pm
+lib/Dist/Zilla/Plugin/ChangesFromYaml/Convert.pm
+t/000-report-versions-tiny.t
+t/01basic.t
+t/author-pod-spell.t
