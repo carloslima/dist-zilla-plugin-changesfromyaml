@@ -7,12 +7,14 @@ with( 'Dist::Zilla::Role::FileMunger' );
 use namespace::autoclean;
 use Dist::Zilla::Plugin::ChangesFromYaml::Convert qw(convert);
 
+has dateformat => (is => 'ro', isa => 'Str', default => '');
+
 sub munge_file {
     my ($self, $file) = @_;
 
     return unless $file->name eq 'Changes';
 
-    $file->content( convert( $file->content ) );
+    $file->content( convert( $file->content, $self->dateformat ) );
     $self->log_debug(
         [
             'Converte Changes from YAML to CPAN::Changes::Spec', $file->name
