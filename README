@@ -21,3 +21,6 @@ DESCRIPTION
          - Testing: Added Travis-CI integration
          - Makefile: Added target to update version on all packages
 
+AUTHOR
+    Carlos Lima <carlos@cpan.org>
+

@@ -50,4 +50,8 @@ and during build converts it to CPAN::Changes::Spec format
      - Testing: Added Travis-CI integration
      - Makefile: Added target to update version on all packages
 
+=head1 AUTHOR
+
+Carlos Lima <carlos@cpan.org>
+
 =cut
