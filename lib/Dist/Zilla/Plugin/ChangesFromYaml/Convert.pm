@@ -1,5 +1,5 @@
 #!/usr/bin/env perl
-package ChangesFromYaml;
+package Dist::Zilla::Plugin::ChangesFromYaml::Convert;
 
 use 5.010;
 use strict;
@@ -7,10 +7,11 @@ use warnings;
 use YAML::XS;
 use CPAN::Changes;
 use Exporter 'import';
-our @EXPORT_OK(convert);
+our @EXPORT_OK = qw(convert);
 
 sub convert {
     my ($changes_yml) = @_;
+    my $changes = CPAN::Changes->new;
 
     my @releases = Load( $changes_yml );
 
