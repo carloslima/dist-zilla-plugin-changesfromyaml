@@ -52,6 +52,27 @@ and during build converts it to CPAN::Changes::Spec format
      - Testing: Added Travis-CI integration
      - Makefile: Added target to update version on all packages
 
+=head1 DATE FORMAT
+
+The dates used on the YAML format can also be converted if they don't follow CPAN::Changes::Spec rules.
+
+Ie. if you keep your dates as the output of `date` (Sun Oct 27 02:10:50 MYT 2013), add:
+
+    [ChangesFromYaml]
+    dateformat = ccc MMM dd HH:mm:ss zzz yyyy
+
+This will convert your dates from:
+
+    version: 0.37
+    date:    Fri Oct 25 21:46:59 MYT 2013
+
+into:
+
+    0.37 2013-10-25 21:46:59 +0800
+
+
+For documentation on the pattern, read L<DateTime::Format::CLDR>.
+
 =head1 AUTHOR
 
 Carlos Lima <carlos@cpan.org>
