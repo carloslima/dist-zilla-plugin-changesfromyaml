@@ -1,5 +1,6 @@
 #!/usr/bin/env perl
 package Dist::Zilla::Plugin::ChangesFromYaml::Convert;
+# VERSION
 
 use 5.010;
 use strict;
