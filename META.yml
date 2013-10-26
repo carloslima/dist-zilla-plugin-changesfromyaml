@@ -3,6 +3,10 @@ abstract: 'convert Changes from YAML to CPAN::Changes::Spec format'
 author:
   - 'Carlos Lima <carlos@cpan.org>'
 build_requires:
+  File::Spec: 0
+  File::Temp: 0
+  IO::Handle: 0
+  IPC::Open3: 0
   Test::DZil: 0
   Test::More: 0.88
 configure_requires:
@@ -17,8 +21,6 @@ name: Dist-Zilla-Plugin-ChangesFromYaml
 no_index:
   directory:
     - corpus
-  file:
-    - perlcritic.rc
 requires:
   CPAN::Changes: 0
   Dist::Zilla::Role::FileMunger: 0
@@ -29,8 +31,4 @@ requires:
   perl: 5.010
   strict: 0
   warnings: 0
-resources:
-  bugtracker: https://github.com/xenoterracide/dist-zilla-plugin-changesfromyaml/issues
-  homepage: https://metacpan.org/dist/Dist-Zilla-Plugin-ChangesFromYaml
-  repository: git://github.com/xenoterracide/dist-zilla-plugin-changesfromyaml.git
 version: 0.001
