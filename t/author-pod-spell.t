@@ -20,6 +20,8 @@ all_pod_files_spelling_ok( qw( bin lib  ) );
 __DATA__
 ini
 YAML
+Ie
+MYT
 Carlos
 Lima
 carlos
