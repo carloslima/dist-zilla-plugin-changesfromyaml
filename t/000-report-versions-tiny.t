@@ -49,6 +49,8 @@ sub pmver {
 }
 
 eval { $v .= pmver('CPAN::Changes','any version') };
+eval { $v .= pmver('Carp','any version') };
+eval { $v .= pmver('DateTime::Format::CLDR','any version') };
 eval { $v .= pmver('Dist::Zilla::Role::FileMunger','any version') };
 eval { $v .= pmver('Exporter','any version') };
 eval { $v .= pmver('ExtUtils::MakeMaker','6.30') };
