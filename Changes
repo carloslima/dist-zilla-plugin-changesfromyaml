@@ -1,2 +1,7 @@
 {{$NEXT}}
+- First release
+---
+version: 0.001-TRIAL
+date:    Sat Oct 26 20:47:24 MYT 2013
+changes:
 - Initial version
