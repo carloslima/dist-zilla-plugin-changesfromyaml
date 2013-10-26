@@ -17,4 +17,5 @@ t/author-pod-spell.t
 t/release-distmeta.t
 t/release-eol.t
 t/release-no-tabs.t
+t/release-pod-syntax.t
 t/release-test-version.t
