@@ -8,5 +8,7 @@ perl:
 install:
    - dzil authordeps --missing | cpanm -nq || { cat ~/.cpanm/build.log ; false ; }
    - dzil listdeps --author --missing | grep -v Baz | cpanm -nq || { cat ~/.cpanm/build.log ; false ; }
+   - git config --local user.name Travis
+   - git config --local user.email travis@localhost
 script:
    - dzil test --automated --author --release
