@@ -4,11 +4,11 @@
 -
 ---
 version: 0.001
-date:    Sat Oct 26 20:51:53 MYT 2013
+date:    2013-10-26 20:51:53 +0800
 changes:
 - First release
 ---
 version: 0.001-TRIAL
-date:    Sat Oct 26 20:47:24 MYT 2013
+date:    2013-10-26 20:47:24 +0800
 changes:
 - Initial version
