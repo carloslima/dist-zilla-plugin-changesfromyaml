@@ -1,5 +1,5 @@
 {{$NEXT}}
-
+- Handle UTC on date (by replacing it with GMT)
 ---
 version: 0.002
 date:    2013-10-27 02:37:54 +0800
