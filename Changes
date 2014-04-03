@@ -1,4 +1,9 @@
 {{$NEXT}}
+
+---
+version: 0.004
+date:    2014-04-04 01:05:11 +0800
+changes:
 - Added abstract to pod; should fix MetaCPAN not showing it correctly. Thanks Neil Bowers.
 ---
 version: 0.003
