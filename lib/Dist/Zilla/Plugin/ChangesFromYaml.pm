@@ -27,6 +27,10 @@ __PACKAGE__->meta->make_immutable;
 
 __END__
 
+=head1 NAME
+
+Dist::Zilla::Plugin::ChangesFromYaml - convert Changes from YAML to CPAN::Changes::Spec format
+
 =head1 SYNOPSIS
 
 In your 'dist.ini':
