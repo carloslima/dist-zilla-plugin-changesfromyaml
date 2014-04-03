@@ -1,4 +1,4 @@
-0.004 2014-04-04 01:04:27 +0800
+0.004 2014-04-04 01:05:11 +0800
  - Added abstract to pod; should fix MetaCPAN not showing it correctly.
    Thanks Neil Bowers.
 
