@@ -9,6 +9,7 @@ my $tzil = Builder->from_config( { dist_root => 'corpus/DZT2' } );
 $tzil->build;
 
 my $contents = $tzil->slurp_file('build/Changes');
+$contents =~ s/^$//m;
 
 is( $contents, <<'CHANGES', "Changes got converted correctly" );
 0.37 2013-10-25 21:46:59 +0800
@@ -22,5 +23,4 @@ is( $contents, <<'CHANGES', "Changes got converted correctly" );
 
 0.35 2013-05-27 14:23:42 -0700
  - Forgot to merge doc changes from CarlosLima++
-
 CHANGES
