@@ -14,7 +14,7 @@ sub munge_file {
 
     return unless $file->name eq 'Changes';
 
-    $file->content( convert( $file->content, $self->dateformat ) );
+    $file->content( convert( $file->encoded_content, $self->dateformat ) );
     $self->log_debug(
         [
             'Converte Changes from YAML to CPAN::Changes::Spec', $file->name

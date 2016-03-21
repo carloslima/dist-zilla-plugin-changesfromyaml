@@ -1,6 +1,7 @@
 #!/usr/bin/perl
 use strict;
 use warnings;
+use utf8;
 use Test::More ( tests => 1 );
 use Test::DZil;
 
@@ -16,6 +17,7 @@ is( $contents, <<'CHANGES', "Changes got converted correctly" );
    dependencies to be present (GH issue #22)
  - Testing: Added Travis-CI integration
  - Makefile: Added target to update version on all packages
+ - ∮ E⋅da = Q, n → ∞, ∑ f(i) = ∏ g(i)
 
 0.36 Sun Oct 20 04:44:42 MYT 2013
  - Move the distribution to Dist::Zilla

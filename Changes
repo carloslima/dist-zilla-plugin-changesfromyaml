@@ -1,5 +1,6 @@
 {{$NEXT}}
 - Fixed tests failing with newer version of CPAN::Changes. (Tina Müller)
+- Fixes encoding issues when converting the YAML. Thanks Tina ;-)
 ---
 version: 0.004
 date:    2014-04-04 01:05:11 +0800
