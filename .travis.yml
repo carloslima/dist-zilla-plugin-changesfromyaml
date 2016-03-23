@@ -1,5 +1,7 @@
 language: perl
 perl:
+  - 5.22
+  - 5.20
   - 5.18
   - 5.16
   - 5.14
@@ -11,4 +13,4 @@ install:
    - git config --local user.name Travis
    - git config --local user.email travis@localhost
 script:
-   - dzil test --automated --author --release
+   - dzil -Ilib test --automated --author --release
