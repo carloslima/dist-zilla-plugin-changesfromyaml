@@ -18,6 +18,8 @@ sub convert {
     my $changes = CPAN::Changes->new;
 
     my @releases = Load($changes_yml);
+    # CPAN::Changes changed the order of releases in 0.500002
+    @releases = reverse @releases if CPAN::Changes->VERSION > 0.5;
 
     for (@releases) {
         if ($dateformat) {
